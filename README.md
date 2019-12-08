@@ -1,1 +1,1 @@
-# tag-issue-with-branch
+# action-tag-issue-with-branch

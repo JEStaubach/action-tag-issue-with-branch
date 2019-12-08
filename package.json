@@ -1,0 +1,26 @@
+{
+  "name": "@jsdevtools/action-tag-issue-with-branch",
+  "version": "1.0.0",
+  "description": "Label issues if there is a branch referencing it.",
+  "main": "index.js",
+  "dependencies": {
+    "@actions/core": "^1.2.0",
+    "@actions/github": "^1.1.0",
+    "@jestaubach/actions": "github:JEStaubach/actions#dev"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JEStaubach/action-tag-issue-with-branch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JEStaubach/action-tag-issue-with-branch"
+  },
+  "homepage": "https://github.com/JEStaubach/action-adjust-tag-issue-with-branch#readme"
+}
