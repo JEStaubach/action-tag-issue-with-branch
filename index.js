@@ -5,14 +5,15 @@ const actions = require("@jestaubach/actions");
 
 async function run() {
   const myToken = process.env.ACTION_TOKEN ? process.env.ACTION_TOKEN : core.getInput("action-token");
+  const repo = process.env.REPO ? process.env.REPO : core.getInput("repo");
   const octokit = new github.GitHub(myToken);
   const context = github.context;
   
   console.log(
-    `>> Action triggered by schedule\n`,
+    `>> Action triggered by schedule for repo: ${repo}\n`,
     `   << Tag issues with branch associated`
   );
-  await actions.githubProjects.tagIssueWithBranchAsWIP(octokit, context);
+  await actions.githubProjects.tagIssueWithBranchAsWIP(octokit, context, repo);
 }
 
 run()
